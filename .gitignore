@@ -1,0 +1,147 @@
+# FinChatBot — .gitignore
+
+# ============================================
+# SECRETS & ENVIRONMENT
+# ============================================
+.env
+.env.local
+.env.production
+.env.*.local
+*.env
+
+# ============================================
+# NODE.JS
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+package-lock.json
+yarn.lock
+
+# ============================================
+# FRONTEND BUILD
+# ============================================
+Frontend/dist/
+Frontend/.vite/
+Frontend/build/
+
+# ============================================
+# UPLOADS & USER DATA
+# ============================================
+Backend/uploads/
+Python-Backend/uploads/
+uploads/
+*.pdf
+*.xlsx
+*.docx
+*.csv
+
+# ============================================
+# VECTOR STORE DATA
+# ============================================
+Python-Backend/vector_store/
+vector_store/
+*.faiss
+*.pkl
+*.index
+
+# ============================================
+# PYTHON
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+Python-Backend/venv/
+Python-Backend/.venv/
+
+# Python build
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+MANIFEST
+.installed.cfg
+
+# Python testing
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.tox/
+.nox/
+
+# Python tools
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+cython_debug/
+
+# ============================================
+# LOGS
+# ============================================
+*.log
+logs/
+npm-debug.log*
+pip-log.txt
+
+# ============================================
+# OS
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ============================================
+# EDITOR
+# ============================================
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+.history/
+
+# ============================================
+# TESTING
+# ============================================
+Testing files/
+test-results/
+*.test.log
+
+# ============================================
+# MISC
+# ============================================
+.pdm-python
+.pdm-build/
+.pixi
+__pypackages__/
+.pytest_cache/
+.hypothesis/
+.abstra/
+.cursorignore
+.cursorindexingignore
+marimo/_static/
+marimo/_lsp/
+__marimo__/
